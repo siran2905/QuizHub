@@ -55,12 +55,12 @@ public class QuizApp {
             long startTime = System.currentTimeMillis();
 
             System.out.println("\n==============================================");
-            System.out.println(" Starting Quiz! 15 Questions | 25s per Question");
+            System.out.println(" Starting Quiz! 10 Questions | 25s per Question");
             System.out.println("==============================================");
 
             for (int i = 0; i < questionPool.size(); i++) {
                 Question q = questionPool.get(i);
-                System.out.println("\nQuestion " + (i + 1) + "/15: " + q.getQuestionText());
+                System.out.println("\nQuestion " + (i + 1) + "/10: " + q.getQuestionText());
                 System.out.println("A) " + q.getOptionA());
                 System.out.println("B) " + q.getOptionB());
                 System.out.println("C) " + q.getOptionC());
@@ -98,7 +98,7 @@ public class QuizApp {
             saveUserScore(username, levelName, score, totalTimeTaken);
             
             System.out.println("\n==============================================");
-            System.out.println(" Quiz Completed! Score: " + score + "/15 | Time: " + totalTimeTaken + "s");
+            System.out.println(" Quiz Completed! Score: " + score + "/10 | Time: " + totalTimeTaken + "s");
             System.out.println("==============================================");
 
             showLeaderboard();
